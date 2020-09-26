@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
+	
+	<!-- Добавим новую ItemGroup, заменив пути и имена соответствующим образом -->
+	<ItemGroup>
+		<!--  Обратите внимание, что это не "обычный" ProjectReference. 
+		Понадобятся дополнительные атрибуты 'OutputItemType' и 'ReferenceOutputAssmbly'. -->
+		<ProjectReference Include="..\Modular\Modular.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+</Project>
